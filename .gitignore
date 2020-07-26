@@ -1,0 +1,9 @@
+# VISUAL STUDIO CODE
+.vscode/
+
+# g++ comiler
+a.out
+
+# DESKTOP CONTAINERS
+containers/*
+!containers/home.txt

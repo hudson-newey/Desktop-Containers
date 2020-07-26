@@ -25,13 +25,16 @@ class fileObject {
     }
 
     void writeFile(string container, string text) {
+        // get existing container text
         string currentText = readFile(container);
-        ofstream myfile ("./containers/" + container + ".txt");
+
+        // open container file
+        ofstream activeContainer("./containers/" + container + ".txt");
         
         // append to file
-        if (myfile.is_open()) {
-            myfile << currentText << text;
-            myfile.close();
+        if (activeContainer.is_open()) {
+            activeContainer << currentText << text;
+            activeContainer.close();
         } else {
             // unable to write or open file
             cout << "Unable to write to container";

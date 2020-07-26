@@ -1,5 +1,6 @@
 #include <iostream>
 #include <strings.h>
+#include <stdlib.h>
 
 #include "notes.cpp"
 
