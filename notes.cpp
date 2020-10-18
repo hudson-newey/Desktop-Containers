@@ -15,7 +15,7 @@ void run(string container) {
 
         // get user input for next line of file
         std::cout << ":";
-        std::cin >> userInput;
+        getline(cin, userInput, '\n');
 
         // write next line to file
         files.writeFile(container, userInput);
